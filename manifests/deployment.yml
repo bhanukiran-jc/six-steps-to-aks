@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: bhanukiranjcsixstepstoaks 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: bhanukiranjcsixstepstoaks 
+    spec:
+      containers:
+        - name: bhanukiranjcsixstepstoaks 
+          image: 12test1234.azurecr.io/bhanukiranjcsixstepstoaks
+          ports:
+          - containerPort: 5000
